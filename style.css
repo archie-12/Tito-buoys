@@ -255,7 +255,7 @@ input[type = "checkbox"]:checked ~ .bar .mid
   position: fixed;
   width: 100%;
   display: fixed;
-  height: 20%;
+  height: 30%;
   text-align: center;
   top: 58px;
 }
