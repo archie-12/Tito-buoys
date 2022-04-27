@@ -250,6 +250,15 @@ input[type = "checkbox"]:checked ~ .bar .mid
   transition: 0.5s ease;
 
   }
+  .img1
+{
+  position: fixed;
+  width: 100%;
+  display: fixed;
+  height: 20%;
+  text-align: center;
+  top: 58px;
+}
 }
 @media(max-width: 600px)
 {
