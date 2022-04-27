@@ -1,0 +1,251 @@
+*
+{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.button
+{
+  border: none;
+  color: white;
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  margin: 4px 10px;
+  cursor: pointer;
+
+}
+#container
+{
+text-align: center;
+margin-right: 40px;
+}
+
+.button1 {background-color: orange;}
+.button2 {background-color: #000000;}
+.button3 {background-color: #000000;}
+.button4 {background-color: #000000;}
+.button5 {background-color: #000000;}
+.button6 {background-color: #000000;}
+.button7 {background-color: #000000;}
+
+.button1:hover
+{
+  box-shadow: inset 110px 0 0 0 orange;
+  transition: ease-out 0.3s;
+}
+.button2:hover
+{
+  box-shadow: inset 110px 0 0 0 orange;
+  transition: ease-out 0.3s;
+}
+.button3:hover
+{
+  box-shadow: inset 110px 0 0 0 orange;
+  transition: ease-out 0.3s;
+}
+.button4:hover
+{
+  box-shadow: inset 110px 0 0 0 orange;
+  transition: ease-out 0.3s;
+}
+.button5:hover
+{
+  box-shadow: inset 110px 0 0 0 orange;
+  transition: ease-out 0.3s;
+}
+.button7:hover
+{
+  box-shadow: inset 110px 0 0 0 orange;
+  transition: ease-out 0.3s;
+}
+button.active
+{
+  background-color: orange;
+}
+
+nav
+{
+  background: black;
+  width: 100%;
+  height: 58px;
+text-align: center;
+flex: 1;
+}
+nav li
+{
+  text-align: center;
+
+}
+
+section
+{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+#sidebar
+{
+  position:fixed;
+  width: 15%;
+  height: 50%;
+  top:auto;
+  background-color: black;
+  right: -15%;
+  transition: 0.5s ease;
+}
+#sidebar li
+{
+  flex: 1;
+  background-color:black;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 16px;
+color: white;
+  font-family: inherit;
+}
+
+.socmed
+{
+  color: orange;
+}
+
+#sidebar.active
+{
+right: 0;
+transition: 0.5s ease;
+}
+.img
+{
+position: fixed;
+width: 150px;
+height: 150px;
+left: 10%;
+margin: 4px 10px;
+top: -50px;
+}
+
+.img1
+{
+  position: fixed;
+  width: 100%;
+  height: 55%;
+  text-align: center;
+  top: 58px;
+}
+
+
+input[type = "checkbox"]
+{  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+.bar
+{
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  left: -60px;
+  top: 25px;
+}
+.bar .mid
+{
+  height: 4px;
+  width: 30px;
+  background: white;
+  border-radius: 50px;
+  position: absolute;
+  transition: 0.5s ease;
+}
+
+.bar .top
+{
+  bottom: 4px;
+  height: 4px;
+  width: 30px;
+  background: white;
+  border-radius: 50px;
+  position: absolute;
+  transition: 0.5s ease;
+}
+
+.bar .bot
+{
+  top: 8px;
+  height: 4px;
+  width: 30px;
+  background: white;
+  border-radius: 50px;
+  position: absolute;
+  transition: 0.5s ease;
+}
+input[type = "checkbox"]:checked ~ .bar .top
+{
+  transform: rotate(-45deg);
+  transform-origin: right;
+  top: -10.5px;
+  width: 29.6px;
+}
+
+input[type = "checkbox"]:checked ~ .bar .bot
+{
+  transform: rotate(45deg);
+  transform-origin: right;
+  top: 10.5px;
+  width: 29.6px;
+}
+input[type = "checkbox"]:checked ~ .bar .mid
+{
+  transform:translate(20px);
+  opacity: 0;
+
+}
+
+
+@media(max-width: 858px)
+{
+  #sidebar
+  {
+
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top:58px;
+    background-color: black;
+    right: -600px;
+    transition: 0.5s ease;
+  }
+  nav
+  {
+    background: brown;
+    width: 100%;
+    height: 58px;
+  text-align: center;
+  flex: 1;
+  }
+
+  #menubuttons
+  {
+  display: none;
+
+  }
+
+  .bar
+  {
+    position: fixed;
+    cursor: pointer;
+    display: fixed;
+    left: 480px;
+    top: 25px;
+
+  }
+  #sidebar.active
+  {
+  right: 0px;
+  transition: 0.5s ease;
+
+  }
+}
