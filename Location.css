@@ -241,6 +241,8 @@ justify-content: center;
   }
   nav
   {
+    Position: sticky;
+    Top:0px;
     background: brown;
     width: 100%;
     height: 58px;
