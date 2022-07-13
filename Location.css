@@ -8,14 +8,21 @@
   list-style: none;
   box-sizing: border-box;
 }
+
+body
+{
+  background: url(LocationBG.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 hr.one
 {
   position: absolute;
   width: 100%;
   height: 4px;
-  top: 95%;
-  border: 1px solid black;
-  background: linear-gradient(to left, red, yellow, red)
+  top: 88%;
+  border: none;
+  background: orange;
 
 }
 .button
@@ -31,19 +38,29 @@ hr.one
 
 
 }
+.Formbtn
+{
+  border: none;
+  color: Gray;
+  width: 100px;
+  height: 30px;
+  margin: 4px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
 #container
 {
 text-align: center;
 margin-right: 40px;
 }
 
-.button1 {background-color: #000000;}
+.button1 {background-color: #291413;}
 .button2 {background-color: orange;}
-.button3 {background-color: #000000;}
-.button4 {background-color: #000000;}
-.button5 {background-color: #000000;}
-.button6 {background-color: #000000;}
-.button7 {background-color: #000000;}
+.button3 {background-color: #291413;}
+.button4 {background-color: #291413;}
+.button5 {background-color: #291413;}
+.button6 {background-color: #291413;}
+.button7 {background-color: #291413;}
 
 .button1:hover
 {
@@ -81,11 +98,10 @@ nav
 {
   position: sticky;
   top: 0px;
-  background: black;
+  background: #291413;
   width: 100%;
-  height: 58px;
-text-align: center;
-flex: 1;
+  height: 65px;
+  text-align: center;
 
 }
 nav li
@@ -96,7 +112,7 @@ nav li
 
 section
 {
-  background: url(bg1.jpg) no-repeat;
+  background: url(LocationBG.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
 }
@@ -119,15 +135,27 @@ section
   text-align: center;
   padding: 0.5em;
   font-size: 16px;
-color: white;
+  color: white;
   font-family: inherit;
 }
 
-.socmed
+#sidebar li.socmed
 {
-  color: orange;
+color: blue;
 }
 
+#sidebar li a
+{
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  color: #B83239;
+}
+
+#sidebar li a:hover
+{
+color: #E6676B
+}
 #sidebar.active
 {
   position: absolute;
@@ -216,14 +244,69 @@ input[type = "checkbox"]:checked ~ .bar .mid
   opacity: 0;
 
 }
-#Map
+
+.form
+{
+  margin-top: 5%;
+  margin-left: 5%;
+  padding: 2vw 4vw;
+  border-radius: 10px;
+  background: white;
+  border: solid gray;
+  width: 90%;
+  height: 565px;
+
+}
+.form h2
 {
   text-align: center;
-justify-content: center;
+  color: #F5C43B;
 }
+.form h4
+{
+  font-family: monospace;
+  margin-left: 5%;
 
-
-
+}
+.form i
+{
+  color: blue;
+}
+iframe.Map
+{
+  width: 40%;
+  height: 500px;
+  float: left;
+  position: static;
+}
+.form input
+{
+  border: 1px solid yellow;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  letter-spacing: 1px;
+}
+.form textarea
+{
+  border: 1px solid yellow;
+  margin: 10px 0;
+  padding: 8px;
+  outline: none;
+  letter-spacing: 1px;
+}
+.form button
+{
+  background-color: yellow;
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-left: 50px;
+  letter-spacing: 1px;
+}
+.form li
+{
+margin-left: 51%;
+}
 
 @media(max-width: 858px)
 {
@@ -241,9 +324,7 @@ justify-content: center;
   }
   nav
   {
-    Position: sticky;
-    Top:0px;
-    background: brown;
+    background: #291413;
     width: 100%;
     height: 58px;
     text-align: center;
@@ -252,13 +333,10 @@ justify-content: center;
 
   #menubuttons
   {
-
   display: none;
-
   }
 
   .bar
-
   {
   position: sticky;
   float: right;
@@ -277,8 +355,6 @@ justify-content: center;
 }
 @media(max-width: 600px)
 {
-
-
   .img1
 {
 position: absolute;
@@ -287,6 +363,6 @@ display: fixed;
 height: 30%;
 text-align: center;
 top: 58px;
-
 }
+
 }
