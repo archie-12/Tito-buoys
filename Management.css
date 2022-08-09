@@ -1,0 +1,191 @@
+*
+{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body
+{
+  background: url(images/LocationBG.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.button
+{
+
+  border: none;
+  color: black;
+  background-color: yellow;
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  margin: 4px 10px;
+  cursor: pointer;
+
+
+}
+.Formbtn
+{
+  border: none;
+  color: black;
+  width: 100px;
+  height: 30px;
+  margin: 4px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+#container
+{
+text-align: center;
+margin-right: 40px;
+}
+
+
+.img
+{
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  left: 10%;
+  margin: 4px 10px;
+  top: 10px;
+}
+
+.form
+{
+
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  padding: 2vw 4vw;
+  border-radius: 10px;
+  background: white;
+  border: solid gray;
+  width: 300px;
+  height:400px
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+.form h2
+{
+  text-align: center;
+  color: #F5C43B;
+}
+.form h4
+{
+  font-family: monospace;
+  margin-left: 5%;
+
+}
+.form i
+{
+  color: blue;
+}
+.form input
+{
+  border: 1px solid yellow;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  letter-spacing: 1px;
+
+}
+
+.form button
+{
+  background-color: yellow;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  width: 100px;
+  }
+  .form textarea
+  {
+    width: 100px;
+  }
+  .form label
+  {
+    position: absolute;
+    color: gray;
+    cursor: pointer;
+    right: 15px;
+    top: 4px;
+    font-size: 18px;
+    font-family: monospace;
+  }
+  .form label:hover
+  {
+    color: orange;
+  }
+  .showbutton:hover
+  {
+    color: gray;
+  }
+  .showbutton
+  {
+    cursor: pointer;
+    background: yellow;
+    padding: 5px 10px;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  #show:checked ~ .close
+  {
+    display: block;
+  }
+  .close
+  {
+    display: none;
+  }
+  input[type="checkbox"]
+  {
+    display: none;
+  }
+  /* Dbform */
+  .dbform
+  {
+    position: absolute;
+    text-align: center;
+    padding: 2vw 4vw;
+    border-radius: 10px;
+    background: white;
+    border: solid gray;
+    width: 1000px;
+    margin-left: 10%;
+    margin-top: 10%;
+    }
+.dbform table
+{
+
+  border-collapse: collapse;
+  color: gray;
+  text-align: center;
+  width: 100%;
+  padding: 10px 20px
+  height: 500px;
+}
+.dbform th
+{
+  position: sticky;
+  font-size: 20px;
+  background-color: orange;
+  color: white;
+  padding: 10px;
+}
+.dbform tr{
+  font-size: 18px;
+}
+.dbform tr:nth-child(even)
+{
+  background-color: yellow;
+}
+.dbform label
+{
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}

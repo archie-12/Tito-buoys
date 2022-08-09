@@ -1,0 +1,85 @@
+*
+{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body
+{
+  background: url(images/LocationBG.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.Formbtn
+{
+  border: none;
+  color: black;
+  width: 100px;
+  height: 30px;
+  margin: 4px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.img
+{
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  left: 10%;
+  margin: 4px 10px;
+  top: 10px;
+}
+
+.form
+{
+
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  padding: 2vw 4vw;
+  border-radius: 10px;
+  background: white;
+  border: solid gray;
+  width: 300px;
+  height:400px
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.form h2
+{
+  text-align: center;
+  color: #F5C43B;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.form input
+{
+  border: 1px solid yellow;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.form button
+{
+  background-color: yellow;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.error
+{
+  background: #F2DEDE;
+  color: #A94442;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+}

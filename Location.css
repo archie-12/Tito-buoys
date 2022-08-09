@@ -11,7 +11,7 @@
 
 body
 {
-  background: url(LocationBG.jpg) no-repeat;
+  background: url(images/LocationBG.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -112,7 +112,7 @@ nav li
 
 section
 {
-  background: url(LocationBG.jpg) no-repeat;
+  background: url(images/LocationBG.jpg);
   background-size: cover;
   height: calc(100vh - 80px);
 }
@@ -286,6 +286,7 @@ iframe.Map
   padding: 10px;
   outline: none;
   letter-spacing: 1px;
+
 }
 .form textarea
 {
@@ -365,4 +366,15 @@ text-align: center;
 top: 58px;
 }
 
+}
+@media(max-width: 420px)
+{
+  .form input
+  {
+  width: 100px;
+  }
+  .form textarea
+  {
+    width: 100px;
+  }
 }
